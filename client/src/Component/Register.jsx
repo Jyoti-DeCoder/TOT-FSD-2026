@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 
 function Register() {
   const [user, setUser] = useState({
@@ -6,7 +7,29 @@ function Register() {
     email: "",
     password: "",
   });
+useEffect(() => {
+    // fetch("http://localhost:3002/users")
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     setUsers(data.userdata);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+    loadUser();
+  }, []);
+const loadUser = ()=>{
+  try{
+            const res = axios.get("http://localhost:3001/users");
+            console.log("Data: ",res.data);
+            setUsers(res.data);
+        }
+        catch(err){
+            console.error("Error",err);
+        }
+}
 
+}
   // Handle input change
   const handleChange = (e) => {
     setUser({

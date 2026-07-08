@@ -16,7 +16,7 @@ function ViewUser() {
 
   return (
     <div>
-      <h2>View Users</h2>
+      <h2>List of Users</h2>
 
       <table border="1" cellPadding="10">
         <thead>
@@ -33,6 +33,10 @@ function ViewUser() {
               <td>{user.id}</td>
               <td>{user.name}</td>
               <td>{user.email}</td>
+              <td>
+                <button>Edit</button>
+                 <button>Delete</button>
+              </td>
             </tr>
           ))}
         </tbody>

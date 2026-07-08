@@ -1,9 +1,11 @@
 import express from "express"
 import dotenv from "dotenv";
+import cors from "cors"
 dotenv.config();
 const port = process.env.PORT||3002;
 const app = express();
-app.use(express.json());
+app.use(cors()); //to allow cors
+app.use(express.json()); //middleware
 const userdata = [{
     id:1,
     name: "Jyoti",
