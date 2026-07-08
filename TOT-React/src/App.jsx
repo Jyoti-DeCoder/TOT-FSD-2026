@@ -8,6 +8,8 @@ import MyCounter from './component/MyCounter'
 import ImageManipulation from './component/ImageManipulation'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './component/Login'
+import CreateUser from '../../client/src/Component/CreateUser'
+import Register from '../../client/src/Component/Register'
 function App() {
   const [count, setCount] = useState(0)
 let a = 100;
@@ -18,7 +20,7 @@ let a = 100;
           {/* <Gallery /> */}
           {/* <MyCounter /> */}
           {/* <ImageManipulation /> */}
-          <Login />
+          <Register />
           </div>
   )
 }
