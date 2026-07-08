@@ -4,16 +4,16 @@ function ViewUser() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3002/users")
+    fetch("http://localhost:4000/users")
       .then((response) => response.json())
       .then((data) => {
-        setUsers(data.userdata);
+        //setUsers(data.userdata);
+        setUsers(data);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
-
   return (
     <div>
       <h2>List of Users</h2>

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Jyoti",
+    "email": "jyoti@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Arvind",
+    "email": "arvind@gmail.com"
+  },
+  {
+    "name": "Jyoti",
+    "email": "jyoti@gmail.com",
+    "id": 3
+  },
+  {
+    "name": "Jyoti sharma",
+    "email": "jyoti@gmail.com",
+    "id": 4
+  },
+  {
+    "name": "Aditi sharma",
+    "email": "aditi@gmail.com",
+    "id": 5
+  },
+  {
+    "name": "Aditi sharma",
+    "email": "aditi@gmail.com",
+    "id": 6
+  },
+  {
+    "name": "Aditi sharma",
+    "email": "aditi@gmail.com",
+    "id": 7
+  }
+]
